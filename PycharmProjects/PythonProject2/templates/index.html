@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeTimeX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>CodeTimeX</h1>
+    <p>Write Code. Know Its Complexity.</p>
+
+    <form method="POST">
+        <textarea name="code" placeholder="Write your code here"></textarea>
+        <br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if complexity %}
+    <div class="result">
+        ⏱ Time Complexity: {{ complexity }}
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

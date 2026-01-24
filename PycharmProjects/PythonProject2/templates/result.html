@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result - CodeTimeX</title>
+</head>
+<body>
+<h2>Estimated Time Complexity</h2>
+<h1>{{ complexity }}</h1>
+
+
+<h3>Execution Time</h3>
+<ul>
+{% for n, time in runtime %}
+<li>Input {{ n }} → {{ time }} seconds</li>
+{% endfor %}
+</ul>
+
+
+<a href="/">Analyze Another Code</a>
+</body>
+</html>
